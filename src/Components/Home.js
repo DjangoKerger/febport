@@ -6,6 +6,7 @@ import image from "../bg.jpg"
 // 1. for the main section we open a main section element. inside the is an image tag for the background image and then 
 //  a section to put the actual content.
 
+
 const Home = () => {
   return (
     <main>
