@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import { SocialIcon } from 'react-social-icons';
 
 // main job of the navbar is to route users to the sections when they click on the word.
 // 1. import NavLink from react router dom.
@@ -43,6 +44,28 @@ const NavBar = () => {
               About me!
             </NavLink>
           </nav>
+
+          {/* install Social icons */}
+          <div className="inline-flex py-3 px-3 my-6">
+            <SocialIcon 
+              url="https://www.linkedin.com/in/django-kerger-5a1a081a8/" 
+              className="mr-4" 
+              target="_blank" 
+              fgColor="#fff" 
+              style={{ heigth: 35, width: 35}} />
+            <SocialIcon 
+              url="https://github.com/DjangoKerger" 
+              className="mr-4" 
+              target="_blank" 
+              fgColor="#fff" 
+              style={{ heigth: 35, width: 35}}/>
+            <SocialIcon 
+              url="https://www.facebook.com/django.kerger/" 
+              className="mr-4" 
+              target="_blank" 
+              fgColor="#fff" 
+              style={{ heigth: 35, width: 35}}/>
+          </div>
         </div>
     </header>
   )
